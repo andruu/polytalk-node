@@ -1,4 +1,4 @@
-var Client = require('../lib/Polytalk/client');
+var Polytalk = require('../index');
 
 var request = {
     class: 'Model::Order',
@@ -26,7 +26,7 @@ var request3 = {
     }
 }
 
-var client = new Client({ port: 9090 });
+var client = new Polytalk.Client({ port: 9090 });
 
 client.call(request, function (response) {
   console.log(response);

@@ -1,4 +1,4 @@
-Server = require '../lib/Polytalk/server'
+Polytalk = require '../index'
 
 exposes = {}
 exposes['Model.Order'] = require './model/order'
@@ -11,7 +11,7 @@ class Test
 
 exposes['Test'] = Test
 
-server = new Server port: 9090, exposes: exposes
+server = new Polytalk.Server port: 9090, exposes: exposes
 
 server.run (connection, request) ->
   server.call request, (response) ->

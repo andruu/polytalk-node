@@ -1,4 +1,4 @@
-var Server = require('../lib/Polytalk/server');
+var Polytalk = require('../index');
 
 var exposes = {};
 exposes['Model.Order'] = require('./model/order');
@@ -15,7 +15,7 @@ Test.shout = function (words) {
 
 exposes['Test'] = Test;
 
-var server = new Server({ port: 9090, exposes: exposes });
+var server = new Polytalk.Server({ port: 9090, exposes: exposes });
 
 server.run(function(connection, request) {
   server.call(request, function (response) {

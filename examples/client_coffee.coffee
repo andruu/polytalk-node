@@ -1,4 +1,4 @@
-Client = require '../lib/Polytalk/client'
+Polytalk = require '../index'
 
 request = 
   class: 'Model::Order'
@@ -20,7 +20,7 @@ request3 =
   arguments:
     words: 'how are you doing today?'
 
-client = new Client port: 9090
+client = new Polytalk.Client port: 9090
 
 client.call request, (response) ->
   console.log response
