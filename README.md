@@ -18,8 +18,8 @@ arguments    | The arguments to inject into the method in key value pairs.
 
 via npm:
 
-```
-$ npm install jade
+```shell
+$ npm install polyscript
 ```
     
 ## Server Example
