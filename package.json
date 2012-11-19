@@ -16,5 +16,9 @@
     "sockets"
   ],
   "author": "Andrew Weir",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andruu/polytalk-node.git"
+  }
 }
