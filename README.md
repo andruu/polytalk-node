@@ -19,7 +19,7 @@ arguments    | The arguments to inject into the method in key value pairs.
 via npm:
 
 ```shell
-$ npm install polyscript
+$ npm install polytalk
 ```
     
 ## Server Example
